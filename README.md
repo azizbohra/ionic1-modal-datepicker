@@ -45,6 +45,5 @@ labels: { 'closeButton': 'OK', prevButton: '<', nextButton: '>' }
 
 
 ## Screenshots
-
-![Datepicker Screenshot-2](www/img/screenshot-2.png =400x)
-<img src="www/img/screenshot-2.png" width="200">
+<img src="www/img/screenshot-1.png" width="375">
+<img src="www/img/screenshot-2.png" width="375">
