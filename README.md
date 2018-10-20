@@ -46,4 +46,4 @@ labels: { 'closeButton': 'OK', prevButton: '<', nextButton: '>' }
 
 ## Screenshots
 
-![Datepicker Screenshot-1](www/img/screenshot-1.png)
+![Datepicker Screenshot-2](www/img/screenshot-2.png | width=375)
