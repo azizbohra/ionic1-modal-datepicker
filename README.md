@@ -5,6 +5,7 @@ Simple Datepicker for [Ionic](http://ionicframework.com/)
 ## Features
 
 * simple
+* easy to customize
 * backed by [momentJS](http://momentjs.com/), including all l18n / i10n features
 * watchable configuration (it can change whenever you want it to change)
 * from-to timeframe
@@ -41,3 +42,8 @@ onSelected: function callback
 onClose: function callback
 
 labels: { 'closeButton': 'OK', prevButton: '<', nextButton: '>' }
+
+
+## Screenshots
+
+![Datepicker Screenshot-1](www/img/screenshot-1.png)
