@@ -37,18 +37,18 @@ angular.module('starter', ['ionic', 'angularMoment', 'ionic-datepicker'])
   
      // Datepicker on select date
     $scope.onDatePickerDateSelected = function (dDate) {
-      console.log(dDate);
+      console.log('On date select callback: ', dDate);
     };
 
     // Datepicker on close
     $scope.onDatePickerClose = function (dDate) {
-      console.log(dDate);
+      console.log('On datepicker close callback: ', dDate);
       $scope.closeModal();
     };
 
     // Datepicker on confirm
     $scope.onDatePickerConfirm = function (dDate) {
-      console.log(dDate);
+      console.log('On datepicker confirm callback: ', dDate);
       $scope.closeModal();
     }
  
