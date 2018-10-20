@@ -45,5 +45,4 @@ labels: { 'closeButton': 'OK', prevButton: '<', nextButton: '>' }
 
 
 ## Screenshots
-<img src="www/img/screenshot-1.png" width="375">
-<img src="www/img/screenshot-2.png" width="375">
+<img src="www/img/screenshot-1.png" width="275"><img src="www/img/screenshot-2.png" width="275">
