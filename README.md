@@ -11,13 +11,11 @@ Simple Datepicker for [Ionic](http://ionicframework.com/)
 * deactivate custom days
 * flexible styling, custom button labels
 * nice modal datepicker (for Ionic)
-
-
-+ Dont forget to include other needed dependencies like momentJS
+* Dont forget to include other needed dependencies like momentJS
 
 >
 ``` JavaScript
-angular.module('app', [ 'ionic-simple-datepicker' ]);
+angular.module('starter', ['ionic', 'angularMoment', 'ionic-datepicker'])
 ```
 ## Possible options
 
