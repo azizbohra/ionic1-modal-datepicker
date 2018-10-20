@@ -18,10 +18,9 @@ Simple Datepicker for [Ionic](http://ionicframework.com/)
 >
 ``` JavaScript
 angular.module('app', [ 'ionic-simple-datepicker' ]);
-
-Possible options:
-
 ```
+## Possible options
+
 animation: 'slide-in-up'
 
 scope: create a new from $rootScope by default
