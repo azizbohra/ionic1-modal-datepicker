@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ['ionic', 'ionic-datepicker'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,3 +24,56 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('controller', function($scope, $ionicModal, $timeout) {
+
+    $scope.init = function(){
+      $scope.datePicker = {
+        initial: moment().format('YYYY-MM-DD'),
+        from: moment().format('YYYY-MM-DD'),
+        to: '2022-12-30'
+      };
+    };
+  
+     // Datepicker on select date
+    $scope.onDatePickerDateSelected = function (dDate) {
+      console.log(dDate);
+    };
+
+    // Datepicker on close
+    $scope.onDatePickerClose = function (dDate) {
+      console.log(dDate);
+      $scope.closeModal();
+    };
+
+    // Datepicker on confirm
+    $scope.onDatePickerConfirm = function (dDate) {
+      console.log(dDate);
+      $scope.closeModal();
+    }
+ 
+    $scope.openModal = function() {
+      $ionicModal.fromTemplateUrl('templates/modal/datepicker/datepicker.html', {
+        scope: $scope,
+        animation: 'fadeIn',
+        backdropClickToClose: false
+      }).then(function(modal) {
+        $scope.modal = modal;
+        $scope.modal.show();
+      });
+    };
+
+    $scope.closeModal = function() {
+      $scope.modal.hide();
+      $timeout(function() {
+        $scope.modal.remove();
+      }, 300);
+    };
+
+    $scope.$on('modal.hidden', function() {
+      $timeout(function() {
+        $scope.modal.remove();
+      }, 300);
+    });
+});
+

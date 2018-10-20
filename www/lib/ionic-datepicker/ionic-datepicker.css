@@ -1,0 +1,125 @@
+.simple-datepicker__month-picker {
+  background-color: #0fbbbd;
+  color: #fff;
+}
+
+.simple-datepicker__month-picker .title {
+  padding: 15px 10px 5px 10px;
+  text-align: center;
+}
+
+.simple-datepicker__month-picker .title h4 {
+  margin: 0;
+  color: #fff;
+}
+
+.simple-datepicker__month-picker .full-date-wrapper {
+  padding: 5px 15px;
+}
+
+.simple-datepicker__month-picker .btn-previous-month,
+.simple-datepicker__month-picker .btn-next-month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simple-datepicker__month-picker .full-date {
+  text-align: center;
+}
+
+.simple-datepicker__month-picker .full-date p {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.simple-datepicker__month-picker .full-date h3 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+}
+
+.simple-datepicker__calendar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  background-color: #fafafa;
+  color: #000;
+  padding: 0px 16px;
+  min-height: 280px;
+}
+
+.simple-datepicker__calendar__date-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.simple-datepicker__calendar__date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.simple-datepicker__calendar__date--not-current-month,
+.simple-datepicker__calendar__date--not-in-timeframe,
+.simple-datepicker__calendar__date--not-active {
+  color: #adadad;
+}
+
+.simple-datepicker__calendar__date--selected {
+  color: #fff;
+  background-color: #ed164f;
+  border-radius: 50%;
+}
+
+.simple-datepicker__footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+
+.simple-datepicker__footer .left,
+.simple-datepicker__footer .right {
+  width: 50%;
+}
+
+.simple-datepicker__footer .left .button,
+.simple-datepicker__footer .right .button {
+  padding: 5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.simple-datepicker__footer .left {
+  padding: 15px 7px 15px 15px;
+}
+
+.simple-datepicker__footer .left .button {
+  background-color: #adadad;
+  color: #fff;
+}
+
+.simple-datepicker__footer .right {
+  padding: 15px 15px 15px 7px;
+}
+
+.simple-datepicker__footer .right .button {
+  background-color: #0fbbbd;
+  color: #fff;
+}

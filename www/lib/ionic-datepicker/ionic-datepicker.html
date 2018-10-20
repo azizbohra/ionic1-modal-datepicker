@@ -1,0 +1,33 @@
+<div class="simple-datepicker">
+  <div class="simple-datepicker__month-picker">
+    <div class="title">
+      <h4>Select Date</h4>
+    </div>
+
+    <div class="row full-date-wrapper">
+      <div class="col btn-previous-month" ng-click="goToPreviousMonth()" ng-disabled="!hasPrevMonth()"><i class="icon ion-chevron-left"></i></div>
+      <div class="col col-75 full-date">
+        <p>{{getTitleCurrentMonth()}}</p>
+        <h3>{{getTitleCurrentDate()}}</h3>
+        <p>{{getTitleCurrentYear()}}</p>
+      </div>
+      <div class="col btn-next-month" ng-click="goToNextMonth()" ng-disabled="!hasNextMonth()"><i class="icon ion-chevron-right"></i></div>
+    </div>
+  </div>
+
+  <div class="simple-datepicker__calendar">
+    <div class="simple-datepicker__calendar__date-header" ng-bind="weekday" ng-repeat="weekday in weekdays track by $index"></div>
+
+    <div class="simple-datepicker__calendar__date" ng-repeat="day in days track by $index" ng-class="{ 'simple-datepicker__calendar__date--not-current-month': ! day.isInCurrentMonth, 'simple-datepicker__calendar__date--not-in-timeframe': ! day.isInTimeframe, 'simple-datepicker__calendar__date--selected': day.date == current, 'simple-datepicker__calendar__date--not-active': ! day.active }"
+      ng-bind="day.label" ng-click="setSelectedDay(day)"></div>
+  </div>
+
+  <div class="simple-datepicker__footer">
+    <div class="left">
+      <button class="button button-small button-block" on-tap="close()">Cancel</button>
+    </div>
+    <div class="right">
+      <button class="button button-small button-block" on-tap="confirm()">Confirm</button>
+    </div>
+  </div>
+</div>

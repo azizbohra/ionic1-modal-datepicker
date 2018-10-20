@@ -1,0 +1,10 @@
+.datepicker-modal {
+  position: fixed;
+  width: 315px;
+  overflow: hidden;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 0;
+  border-radius: 5px;
+}
